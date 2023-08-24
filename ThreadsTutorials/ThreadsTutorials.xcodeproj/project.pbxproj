@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		436139312A971646004DDE89 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436139302A971646004DDE89 /* RegistrationView.swift */; };
 		436139342A9719F0004DDE89 /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436139332A9719F0004DDE89 /* ThreadsTextFieldModifier.swift */; };
-		436139362A971B13004DDE89 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436139352A971B13004DDE89 /* ButtonModifier.swift */; };
+		436139362A971B13004DDE89 /* ThreadsButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436139352A971B13004DDE89 /* ThreadsButtonModifier.swift */; };
+		4361393A2A972258004DDE89 /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436139392A972258004DDE89 /* ThreadsTabView.swift */; };
 		436873B42A94A15900192D64 /* ThreadsTutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436873B32A94A15900192D64 /* ThreadsTutorialsApp.swift */; };
 		436873B62A94A15900192D64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436873B52A94A15900192D64 /* ContentView.swift */; };
 		436873B82A94A15900192D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 436873B72A94A15900192D64 /* Assets.xcassets */; };
@@ -20,7 +21,8 @@
 /* Begin PBXFileReference section */
 		436139302A971646004DDE89 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		436139332A9719F0004DDE89 /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
-		436139352A971B13004DDE89 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		436139352A971B13004DDE89 /* ThreadsButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsButtonModifier.swift; sourceTree = "<group>"; };
+		436139392A972258004DDE89 /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
 		436873B02A94A15900192D64 /* ThreadsTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		436873B32A94A15900192D64 /* ThreadsTutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTutorialsApp.swift; sourceTree = "<group>"; };
 		436873B52A94A15900192D64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,9 +46,24 @@
 			isa = PBXGroup;
 			children = (
 				436139332A9719F0004DDE89 /* ThreadsTextFieldModifier.swift */,
-				436139352A971B13004DDE89 /* ButtonModifier.swift */,
+				436139352A971B13004DDE89 /* ThreadsButtonModifier.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		436139372A972238004DDE89 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		436139382A97223F004DDE89 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				436139392A972258004DDE89 /* ThreadsTabView.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		436873A72A94A15900192D64 = {
@@ -121,8 +138,9 @@
 		436873C52A94A1D900192D64 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				436873C82A94A25600192D64 /* Views */,
+				436139372A972238004DDE89 /* Root */,
 				436873C72A94A24300192D64 /* Authentication */,
+				436139382A97223F004DDE89 /* TabBar */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -138,6 +156,7 @@
 		436873C72A94A24300192D64 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				436873C82A94A25600192D64 /* Views */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -221,7 +240,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				436139362A971B13004DDE89 /* ButtonModifier.swift in Sources */,
+				436139362A971B13004DDE89 /* ThreadsButtonModifier.swift in Sources */,
+				4361393A2A972258004DDE89 /* ThreadsTabView.swift in Sources */,
 				436873CC2A94A32A00192D64 /* LoginView.swift in Sources */,
 				436873B62A94A15900192D64 /* ContentView.swift in Sources */,
 				436139342A9719F0004DDE89 /* ThreadsTextFieldModifier.swift in Sources */,

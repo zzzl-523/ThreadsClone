@@ -39,7 +39,8 @@ struct LoginView: View {
                 }
                 
                 NavigationLink {
-//                    이동한 곳에 뜨는 텍스트
+                    // 목적지
+                    // Text만 작성하면 Text만 있는 페이지로 이동
                     Text("Forgot Password")
                     
                 } label: {
@@ -56,7 +57,7 @@ struct LoginView: View {
                     
                 } label: {
                     Text("Login")
-                        .modifier(ButtonModifier())
+                        .modifier(ThreadsButtonModifier())
                 }
                 
                 Spacer()

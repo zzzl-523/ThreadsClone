@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ButtonModifier: ViewModifier {
+struct ThreadsButtonModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.subheadline)

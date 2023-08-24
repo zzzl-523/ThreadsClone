@@ -42,7 +42,7 @@ struct RegistrationView: View {
                 
             } label: {
                 Text("Sign Up")
-                    .modifier(ButtonModifier())
+                    .modifier(ThreadsButtonModifier())
             }
             .padding(.vertical)
             
