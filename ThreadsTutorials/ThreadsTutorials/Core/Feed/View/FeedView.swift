@@ -9,7 +9,16 @@ import SwiftUI
 
 struct FeedView: View {
     var body: some View {
-        Text("FeedView")
+        // feed에서는 프로필이나 글 클릭으로 이동해야 하므로 NavigationStack 필요
+        NavigationStack {
+            ScrollView {
+                LazyVStack {
+                    ForEach (0 ... 10, id: \.self){ thread in
+                        FeedCell()
+                    }
+                }
+            }
+        }
     }
 }
 

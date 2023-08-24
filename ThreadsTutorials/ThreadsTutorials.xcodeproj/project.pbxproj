@@ -16,6 +16,7 @@
 		436139492A9729A7004DDE89 /* ThreadCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436139482A9729A7004DDE89 /* ThreadCreationView.swift */; };
 		4361394C2A9729C2004DDE89 /* ActivitiyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4361394B2A9729C2004DDE89 /* ActivitiyView.swift */; };
 		4361394F2A9729D1004DDE89 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4361394E2A9729D1004DDE89 /* ProfileView.swift */; };
+		436139512A97319C004DDE89 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436139502A97319C004DDE89 /* FeedCell.swift */; };
 		436873B42A94A15900192D64 /* ThreadsTutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436873B32A94A15900192D64 /* ThreadsTutorialsApp.swift */; };
 		436873B62A94A15900192D64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436873B52A94A15900192D64 /* ContentView.swift */; };
 		436873B82A94A15900192D64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 436873B72A94A15900192D64 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		436139482A9729A7004DDE89 /* ThreadCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCreationView.swift; sourceTree = "<group>"; };
 		4361394B2A9729C2004DDE89 /* ActivitiyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiyView.swift; sourceTree = "<group>"; };
 		4361394E2A9729D1004DDE89 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		436139502A97319C004DDE89 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		436873B02A94A15900192D64 /* ThreadsTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		436873B32A94A15900192D64 /* ThreadsTutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTutorialsApp.swift; sourceTree = "<group>"; };
 		436873B52A94A15900192D64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				436139422A972983004DDE89 /* FeedView.swift */,
+				436139502A97319C004DDE89 /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				436139432A972983004DDE89 /* FeedView.swift in Sources */,
+				436139512A97319C004DDE89 /* FeedCell.swift in Sources */,
 				436139462A972998004DDE89 /* ExploreView.swift in Sources */,
 				436139362A971B13004DDE89 /* ThreadsButtonModifier.swift in Sources */,
 				4361393A2A972258004DDE89 /* ThreadsTabView.swift in Sources */,
