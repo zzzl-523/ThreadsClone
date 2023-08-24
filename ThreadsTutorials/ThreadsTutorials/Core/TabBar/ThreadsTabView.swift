@@ -12,7 +12,7 @@ struct ThreadsTabView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            Text("Feed View")
+            FeedView()
                 .tabItem {
                     Image(systemName: selectedTab == 0 ? "house.fill" : "house")
                     // 클릭에 따라 채워지고 비워지고 변경
@@ -22,19 +22,19 @@ struct ThreadsTabView: View {
                 // 클릭 후 onAppear되면 selectedTab, tag를 설정해주기
                 .onAppear{selectedTab = 0}
                 .tag(0)
-            Text("Explore")
+            ExploreView()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                 }
                 .onAppear{selectedTab = 1}
                 .tag(1)
-            Text("Upload Thread")
+            ThreadCreationView()
                 .tabItem {
                     Image(systemName: "plus")
                 }
                 .onAppear{selectedTab = 2}
                 .tag(2)
-            Text("Activity")
+            ActivitiyView()
                 .tabItem {
                     Image(systemName: selectedTab == 3 ? "heart.fill" : "heart")
                     // 클릭에 따라 채워지고 비워지고 변경
@@ -43,7 +43,7 @@ struct ThreadsTabView: View {
                 }
                 .onAppear{selectedTab = 3}
                 .tag(3)
-            Text("Profile")
+            ProfileView()
                 .tabItem {
                     Image(systemName: selectedTab == 4 ? "person.fill" : "person")
                     // 클릭에 따라 채워지고 비워지고 변경
