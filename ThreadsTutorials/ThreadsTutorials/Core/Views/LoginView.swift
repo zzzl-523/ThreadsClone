@@ -64,7 +64,10 @@ struct LoginView: View {
                 Divider()
                 
                 NavigationLink {
-                    Text("Registration View")
+                    // 목적지 Destination
+                    RegistrationView()
+                        .navigationBarBackButtonHidden(true)
+                    
                 } label: {
                     HStack(spacing: 3) {
                         Text("Don't have an account?")
