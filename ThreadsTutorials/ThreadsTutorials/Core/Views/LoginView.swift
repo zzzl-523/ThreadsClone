@@ -20,11 +20,22 @@ struct LoginView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 128, height: 128)
+                    .padding()
                 
                 VStack {
                     TextField("Enter your email", text: $email)
+                        .font(.subheadline)
+                        .padding(12)
+                        .background(Color(.systemGray6))
+                        .cornerRadius(10)
+                        .padding(.horizontal, 24)
                     
                     SecureField("Enter your password", text: $password)
+                        .font(.subheadline)
+                        .padding(12)
+                        .background(Color(.systemGray6))
+                        .cornerRadius(10)
+                        .padding(.horizontal, 24)
                 }
                 
                 NavigationLink {
@@ -35,7 +46,7 @@ struct LoginView: View {
                     Text("Forgot Password?")
                         .font(.footnote)
                         .fontWeight(.semibold)
-                        .padding(.top)
+                        .padding(.vertical)
                         .padding(.trailing, 28)
                         .foregroundColor(.black)
                         .frame(maxWidth: .infinity, alignment: .trailing)
@@ -45,12 +56,7 @@ struct LoginView: View {
                     
                 } label: {
                     Text("Login")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                        .frame(width: 352, height: 44)
-                        .background(.black)
-                        .cornerRadius(8)
+                        .modifier(ButtonModifier())
                 }
                 
                 Spacer()
