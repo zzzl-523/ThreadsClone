@@ -18,6 +18,8 @@ struct FeedView: View {
                     }
                 }
             }
+            .navigationTitle("Threads")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
